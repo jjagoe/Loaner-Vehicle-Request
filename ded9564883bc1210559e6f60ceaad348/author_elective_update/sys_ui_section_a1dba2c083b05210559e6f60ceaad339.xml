@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New section 1" section_id="a1dba2c083b05210559e6f60ceaad339" sys_domain="global" table="x_1394714_lva1_loaner_vehicle_catalog" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle_description</element>
+            <position>0</position>
+            <sys_created_by>John</sys_created_by>
+            <sys_created_on>2024-09-17 19:56:42</sys_created_on>
+            <sys_id>b1dbe2c083b05210559e6f60ceaad320</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1394714_lva1_loaner_vehicle_catalog" sys_domain="global" view="Default view">a1dba2c083b05210559e6f60ceaad339</sys_ui_section>
+            <sys_updated_by>John</sys_updated_by>
+            <sys_updated_on>2024-09-17 19:56:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>image</element>
+            <position>1</position>
+            <sys_created_by>John</sys_created_by>
+            <sys_created_on>2024-09-17 19:56:42</sys_created_on>
+            <sys_id>b9dbe2c083b05210559e6f60ceaad320</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1394714_lva1_loaner_vehicle_catalog" sys_domain="global" view="Default view">a1dba2c083b05210559e6f60ceaad339</sys_ui_section>
+            <sys_updated_by>John</sys_updated_by>
+            <sys_updated_on>2024-09-17 19:56:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New section 1</caption>
+            <header>false</header>
+            <name>x_1394714_lva1_loaner_vehicle_catalog</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>John</sys_created_by>
+            <sys_created_on>2024-09-17 19:56:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a1dba2c083b05210559e6f60ceaad339</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1394714_lva1_loaner_vehicle_catalog</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+            <sys_update_name>sys_ui_section_a1dba2c083b05210559e6f60ceaad339</sys_update_name>
+            <sys_updated_by>John</sys_updated_by>
+            <sys_updated_on>2024-09-17 19:56:42</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>sys_ui_section_a1dba2c083b05210559e6f60ceaad339</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="a1dba2c083b05210559e6f60ceaad339" sys_domain="global" table="x_1394714_lva1_loaner_vehicle_catalog" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>vehicle_description</element><position>0</position><sys_created_by>John</sys_created_by><sys_created_on>2024-09-17 19:56:42</sys_created_on><sys_id>b1dbe2c083b05210559e6f60ceaad320</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1394714_lva1_loaner_vehicle_catalog" sys_domain="global" view="Default view">a1dba2c083b05210559e6f60ceaad339</sys_ui_section><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-09-17 19:56:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>image</element><position>1</position><sys_created_by>John</sys_created_by><sys_created_on>2024-09-17 19:56:42</sys_created_on><sys_id>b9dbe2c083b05210559e6f60ceaad320</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1394714_lva1_loaner_vehicle_catalog" sys_domain="global" view="Default view">a1dba2c083b05210559e6f60ceaad339</sys_ui_section><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-09-17 19:56:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New section 1</caption><header>false</header><name>x_1394714_lva1_loaner_vehicle_catalog</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2024-09-17 19:56:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a1dba2c083b05210559e6f60ceaad339</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1394714_lva1_loaner_vehicle_catalog</sys_name><sys_overrides/><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope><sys_update_name>sys_ui_section_a1dba2c083b05210559e6f60ceaad339</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-09-17 19:56:42</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1163675890</payload_hash>
+        <record_name>Loaner Vehicle Catalog</record_name>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-17 19:56:42</sys_created_on>
+        <sys_id>f9dbe2c083b05210559e6f60ceaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192018f03be0000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:56:42</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>71dbe2c0d6b052101253ce77ea0b2822</update_guid>
+        <update_guid_history>71dbe2c0d6b052101253ce77ea0b2822:1163675890</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-17 20:00:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>01a35ad9d83f422f86a2b2326fa76c31</sys_id>
+        <sys_metadata>a1dba2c083b05210559e6f60ceaad339</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New section 1</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent display_value="Loaner Vehicle Catalog">b99cd28883fc1210559e6f60ceaad36a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>sys_ui_section_a1dba2c083b05210559e6f60ceaad339</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_a1dba2c083b05210559e6f60ceaad339">f9dbe2c083b05210559e6f60ceaad322</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-17 20:00:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
