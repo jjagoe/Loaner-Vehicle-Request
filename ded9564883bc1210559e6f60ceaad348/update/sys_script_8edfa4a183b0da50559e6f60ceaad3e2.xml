@@ -21,7 +21,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>Update ticket tracker on ticket closure</name>
-        <order>300</order>
+        <order>400</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -49,7 +49,7 @@ if(current.ticket_status.changesTo('Closed')){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8edfa4a183b0da50559e6f60ceaad3e2</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Update ticket tracker on ticket closure</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
@@ -57,7 +57,7 @@ if(current.ticket_status.changesTo('Closed')){
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>sys_script_8edfa4a183b0da50559e6f60ceaad3e2</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-09-22 03:17:15</sys_updated_on>
+        <sys_updated_on>2024-09-22 04:20:12</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

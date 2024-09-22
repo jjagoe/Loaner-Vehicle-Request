@@ -31,7 +31,7 @@ When users click this button, Set the Vehicle Status to Returned to Warehouse.</
         <name>Return to Warehouse</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.vehicle_status = "Returned for Warehouse";
+        <script><![CDATA[current.vehicle_status = "Returned to Warehouse";
 action.setRedirectURL (current);
 current.update();]]></script>
         <show_insert>true</show_insert>
@@ -44,7 +44,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>908d889483349210559e6f60ceaad390</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Return to Warehouse</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
@@ -52,7 +52,7 @@ current.update();]]></script>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>sys_ui_action_908d889483349210559e6f60ceaad390</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-09-18 03:56:30</sys_updated_on>
+        <sys_updated_on>2024-09-22 04:29:37</sys_updated_on>
         <table>x_1394714_lva1_vehicle_tracker</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
