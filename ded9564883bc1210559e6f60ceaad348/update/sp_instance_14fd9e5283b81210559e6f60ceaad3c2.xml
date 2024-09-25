@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">94fd9e5283b81210559e6f60ceaad3be</sp_column>
+        <sp_widget display_value="LVA Page Title">10fdd6d283b41210559e6f60ceaad3ca</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-24 18:42:19</sys_created_on>
+        <sys_id>14fd9e5283b81210559e6f60ceaad3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sp_instance_14fd9e5283b81210559e6f60ceaad3c2</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-24 18:42:19</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=14fd9e5283b81210559e6f60ceaad3c2"/>
+</record_update>
