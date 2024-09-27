@@ -41,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>72eecfd0837c1610559e6f60ceaad387</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Auto Populate Office Location</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
@@ -49,10 +49,10 @@
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>catalog_script_client_72eecfd0837c1610559e6f60ceaad387</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-09-18 17:19:02</sys_updated_on>
+        <sys_updated_on>2024-09-27 06:17:49</sys_updated_on>
         <table/>
         <type>onChange</type>
-        <ui_type>10</ui_type>
+        <ui_type>0</ui_type>
         <va_supported>true</va_supported>
         <variable_set/>
         <view/>
