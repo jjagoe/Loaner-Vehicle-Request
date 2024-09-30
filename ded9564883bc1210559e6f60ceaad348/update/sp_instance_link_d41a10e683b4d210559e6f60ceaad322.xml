@@ -3,10 +3,8 @@
         <active>true</active>
         <class_name/>
         <color>success</color>
-        <css>.light-green-icon-link {&#13;
-    background-color: #90EE90; /* Light green */&#13;
-    padding: 10px;&#13;
-    border-radius: 5px; /* Optional, to make the corners rounded */&#13;
+        <css>.iconlink{&#13;
+ background-color: #b7edcf; &#13;
 }&#13;
 &#13;
 &#13;
@@ -29,14 +27,14 @@
         <sys_created_by>John</sys_created_by>
         <sys_created_on>2024-09-25 03:44:38</sys_created_on>
         <sys_id>d41a10e683b4d210559e6f60ceaad322</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Vehicle Request</sys_name>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>sp_instance_link_d41a10e683b4d210559e6f60ceaad322</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-09-25 15:41:19</sys_updated_on>
+        <sys_updated_on>2024-09-27 22:16:18</sys_updated_on>
         <title>Vehicle Request</title>
         <type>url</type>
         <url>https://dev280871.service-now.com/now/nav/ui/classic/params/target/com.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D5690209483f49210559e6f60ceaad3d3</url>

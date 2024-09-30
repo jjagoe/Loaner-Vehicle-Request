@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>.light-green-icon-link {&#13;
+    background-color: #90EE90; /* Light green */&#13;
+}&#13;
+&#13;
+</css>
+        <glyph/>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">667918a283b4d210559e6f60ceaad363</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-25 03:44:33</sys_created_on>
+        <sys_id>cb0a5ca683b4d210559e6f60ceaad3f3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sp_instance_link_cb0a5ca683b4d210559e6f60ceaad3f3</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-25 15:49:39</sys_updated_on>
+        <title/>
+        <type>url</type>
+        <url>https://dev280871.service-now.com/x_1394714_lva1.Transit%20350.png</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=cb0a5ca683b4d210559e6f60ceaad3f3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>sp_instance_link_cb0a5ca683b4d210559e6f60ceaad3f3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css&gt;.light-green-icon-link {&amp;#13;
+    background-color: #90EE90; /* Light green */&amp;#13;
+}&amp;#13;
+&amp;#13;
+&lt;/css&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="3"&gt;667918a283b4d210559e6f60ceaad363&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;John&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-25 03:44:33&lt;/sys_created_on&gt;&lt;sys_id&gt;cb0a5ca683b4d210559e6f60ceaad3f3&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1"&gt;ded9564883bc1210559e6f60ceaad348&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;ded9564883bc1210559e6f60ceaad348&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_cb0a5ca683b4d210559e6f60ceaad3f3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;John&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-25 15:49:39&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;type&gt;url&lt;/type&gt;&lt;url&gt;https://dev280871.service-now.com/x_1394714_lva1.Transit%20350.png&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=cb0a5ca683b4d210559e6f60ceaad3f3"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-644010644</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-25 15:49:39</sys_created_on>
+        <sys_id>7400cb6283b0d610559e6f60ceaad3f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19229dfb5280000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-25 15:49:39</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>b800cb622fb0d6103517687ccb4eb8f5</update_guid>
+        <update_guid_history>b800cb622fb0d6103517687ccb4eb8f5:-644010644,cc7a32ae84fc96109121e68d6ce53708:-2117620591,d6df986e22f4d2102c63f1d1e83b9841:430575789,e05c50e6fdf4d210653b113ae2879415:-1138508718,cb0a5ca654b4d210b7c674fb8b9180f5:-677875428</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">ce95665f8378d650559e6f60ceaad3ed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-27 21:49:41</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>149449b51fea4857820edc7f41496ce1</sys_id>
+        <sys_metadata>cb0a5ca683b4d210559e6f60ceaad3f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>sp_instance_link_cb0a5ca683b4d210559e6f60ceaad3f3</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_cb0a5ca683b4d210559e6f60ceaad3f3">7400cb6283b0d610559e6f60ceaad3f6</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-27 21:49:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

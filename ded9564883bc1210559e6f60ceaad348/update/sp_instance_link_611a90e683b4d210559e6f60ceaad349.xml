@@ -3,10 +3,8 @@
         <active>true</active>
         <class_name/>
         <color>success</color>
-        <css>{&#13;
-.light-green-icon-link {&#13;
-    background-color: #f0f0f0; /* Light green */&#13;
-   }&#13;
+        <css>.iconlink{&#13;
+ background-color: #b7edcf; &#13;
 }&#13;
 </css>
         <glyph>book</glyph>
@@ -27,14 +25,14 @@
         <sys_created_by>John</sys_created_by>
         <sys_created_on>2024-09-25 03:44:43</sys_created_on>
         <sys_id>611a90e683b4d210559e6f60ceaad349</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Warehouse Articles</sys_name>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>sp_instance_link_611a90e683b4d210559e6f60ceaad349</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-09-27 05:47:30</sys_updated_on>
+        <sys_updated_on>2024-09-27 22:16:39</sys_updated_on>
         <title>Warehouse Articles</title>
         <type>kb_category</type>
         <url>https://dev280871.service-now.com/x_1394714_lva1.CO%20Crew.png</url>
