@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>0a9d30bdebc31110add0ddde23522847</category>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Request loaner vehicle from LVA bot.</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "61b30eb838494e1286c5b12bf8d3630c": {
+          "id": "61b30eb838494e1286c5b12bf8d3630c",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "! I can help you request a loaner vehicle. Let’s get started"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "bcaf0ad0e21144e2a32abe76e9d79932": {
+          "id": "bcaf0ad0e21144e2a32abe76e9d79932",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "60d0f640c9d749d093578d5b86322564": {
+          "id": "60d0f640c9d749d093578d5b86322564",
+          "stepType": "LinkOutput",
+          "name": "Request Loaner Vehicle",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev280871.service-now.com/now/nav/ui/classic/params/target/com.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D5690209483f49210559e6f60ceaad3d3"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Click Here!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Request Loaner Vehicle"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "8af654198d624a0b87f0f46c7833872f",
+          "edgeType": "Edge",
+          "source": "61b30eb838494e1286c5b12bf8d3630c",
+          "target": "60d0f640c9d749d093578d5b86322564",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f63f6fa686634b14aace7faa3f5f36f3",
+          "edgeType": "Edge",
+          "source": "60d0f640c9d749d093578d5b86322564",
+          "target": "bcaf0ad0e21144e2a32abe76e9d79932",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>Vehicle Request,I need a loaner vehicle,Request a vehicle,Loaner car</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Vehicle Request</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 20:31:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ae1af228838996d0559e6f60ceaad393</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Vehicle Request</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cb_topic_ae1af228838996d0559e6f60ceaad393</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 21:43:05</sys_updated_on>
+        <title>Vehicle Request</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=ae1af228838996d0559e6f60ceaad393"/>
+</record_update>

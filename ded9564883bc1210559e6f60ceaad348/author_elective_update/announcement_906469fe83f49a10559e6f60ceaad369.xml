@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="announcement">
+    <announcement action="DELETE">
+        <active>true</active>
+        <click_target>page</click_target>
+        <details/>
+        <details_link_text/>
+        <details_page display_value="lva_page">d4fd9e5283b81210559e6f60ceaad3a5</details_page>
+        <details_url/>
+        <dismiss_options>dismissible</dismiss_options>
+        <display_first>true</display_first>
+        <display_style display_value="La Jolla Normal">633f6758c31023002ff2554d81d3ae58</display_style>
+        <from>2024-09-26 03:59:05</from>
+        <glyph>glass</glyph>
+        <glyph_alt_text/>
+        <name>LVA Launch</name>
+        <public>true</public>
+        <roles/>
+        <show_for_unauthenticated_users_only>false</show_for_unauthenticated_users_only>
+        <summary>We are excited to announce the launch of our new Loaner Vehicle Request and Inventory Management application, now available in ServiceNow! This new application streamlines the process of requesting loaner vehicles and managing our vehicle inventory, providing you with a more efficient and user-friendly experience.</summary>
+        <sys_class_name>announcement</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-26 04:05:48</sys_created_on>
+        <sys_id>906469fe83f49a10559e6f60ceaad369</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>LVA Launch</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>announcement_906469fe83f49a10559e6f60ceaad369</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 18:12:30</sys_updated_on>
+        <title>New Loaner Vehicle Request and Inventory Management Application is Now Live!</title>
+        <to>2026-09-26 03:59:12</to>
+        <type>67eaf134e7a3320075c2a117c2f6a9d2,52fa79f8e763320075c2a117c2f6a991</type>
+    </announcement>
+    <sys_translated_text action="DELETE" query="documentkey=906469fe83f49a10559e6f60ceaad369"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>announcement_906469fe83f49a10559e6f60ceaad369</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="announcement"><announcement action="INSERT_OR_UPDATE"><active>true</active><click_target>page</click_target><details/><details_link_text/><details_page display_value="lva_page">d4fd9e5283b81210559e6f60ceaad3a5</details_page><details_url/><dismiss_options>dismissible</dismiss_options><display_first>true</display_first><display_style display_value="La Jolla Normal">633f6758c31023002ff2554d81d3ae58</display_style><from>2024-09-26 03:59:05</from><glyph>glass</glyph><glyph_alt_text/><name>LVA Launch</name><public>true</public><roles/><show_for_unauthenticated_users_only>false</show_for_unauthenticated_users_only><summary>We are excited to announce the launch of our new Loaner Vehicle Request and Inventory Management application, now available in ServiceNow! This new application streamlines the process of requesting loaner vehicles and managing our vehicle inventory, providing you with a more efficient and user-friendly experience.</summary><sys_class_name>announcement</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2024-09-26 04:05:48</sys_created_on><sys_id>906469fe83f49a10559e6f60ceaad369</sys_id><sys_mod_count>7</sys_mod_count><sys_name>LVA Launch</sys_name><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope><sys_update_name>announcement_906469fe83f49a10559e6f60ceaad369</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-10-01 18:12:30</sys_updated_on><title>New Loaner Vehicle Request and Inventory Management Application is Now Live!</title><to>2026-09-26 03:59:12</to><type>67eaf134e7a3320075c2a117c2f6a9d2,52fa79f8e763320075c2a117c2f6a991</type></announcement><sys_translated_text action="delete_multiple" query="documentkey=906469fe83f49a10559e6f60ceaad369"/></record_update>]]></payload>
+        <payload_hash>-929067895</payload_hash>
+        <record_name>LVA Launch</record_name>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 18:12:30</sys_created_on>
+        <sys_id>373adeac838d56d0559e6f60ceaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924948a3cb0000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 18:12:30</sys_updated_on>
+        <type>Announcement</type>
+        <update_guid>bb3adeac4a8d56d0f77af2fbe90f4090</update_guid>
+        <update_guid_history>bb3adeac4a8d56d0f77af2fbe90f4090:-929067895,21f9deac698d56d0da7618d44a6fa279:1147094429,96a99aaccb8d56d049959d7ba3fda223:-2030239776,ba3c970f88b0d2504b3f0195a9562056:-117820655,00d925fe7f389a10a19e386a44023d53:189733068,4da9a53a67789a10c99816dc873147dd:390172801,1009a9b2d1789a104f95addeecbb6c79:189733068,4888e1be22389a10f712a343af867798:1927751061</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="LVA Launch">097a16ec838d56d0559e6f60ceaad378</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 18:13:25</sys_created_on>
+        <sys_db_object display_value="Announcement" name="announcement">announcement</sys_db_object>
+        <sys_id>7eeb85fd75374daab51237a1e5e7feb9</sys_id>
+        <sys_metadata>906469fe83f49a10559e6f60ceaad369</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LVA Launch</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>announcement_906469fe83f49a10559e6f60ceaad369</sys_update_name>
+        <sys_update_version display_value="announcement_906469fe83f49a10559e6f60ceaad369">373adeac838d56d0559e6f60ceaad391</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 18:13:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

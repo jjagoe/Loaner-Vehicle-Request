@@ -6,32 +6,27 @@
         <css/>
         <glyph/>
         <id/>
-        <order>3</order>
+        <order>2</order>
         <roles/>
         <short_description/>
         <size>md</size>
         <sp_column display_value="3">667918a283b4d210559e6f60ceaad363</sp_column>
-        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sp_widget display_value="Virtual Agent Service Portal Widget">20c6031e733013004ab2369f2ef6a7c7</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>John</sys_created_by>
-        <sys_created_on>2024-09-27 21:50:20</sys_created_on>
-        <sys_id>7bb5e6d383b8d650559e6f60ceaad350</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2024-10-01 20:53:02</sys_created_on>
+        <sys_id>d3fe32e0830d96d0559e6f60ceaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
-        <sys_update_name>sp_instance_7bb5e6d383b8d650559e6f60ceaad350</sys_update_name>
+        <sys_update_name>sp_instance_d3fe32e0830d96d0559e6f60ceaad3fb</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
         <sys_updated_on>2024-10-01 20:53:02</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters><![CDATA[{
-	"html": {
-		"value": "<p><img src=\"https://dev280871.service-now.com/x_1394714_lva1.Transit%20350.png\" /></p>",
-		"displayValue": "<p><img src=\"https://dev280871.service-now.com/x_1394714_lva1.Transit%20350.png\" /></p>"
-	}
-}]]></widget_parameters>
+        <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=7bb5e6d383b8d650559e6f60ceaad350"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3fe32e0830d96d0559e6f60ceaad3fb"/>
 </record_update>

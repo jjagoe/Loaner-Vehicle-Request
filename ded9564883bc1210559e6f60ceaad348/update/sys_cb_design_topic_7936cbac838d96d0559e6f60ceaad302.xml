@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Vehicle Inventory">3d368bac838d96d0559e6f60ceaad3fc</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"666ee62d51d744fb84cbb029f22f124a","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"666ee62d51d744fb84cbb029f22f124a"}],"goals":[{"name":"primary","trigger_id":"666ee62d51d744fb84cbb029f22f124a","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Here’s a list of all available vehicles.\", vaContext.getRequesterLang())"},"id":"766f607d18e9481697f8f218a1419cad","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"cd9a65209532422b9dd5c5da54933103","name":"End","expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Show me available vehicles\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Click Here!\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/now/nav/ui/classic/params/target/x_1394714_lva1_loaner_vehicle_catalog_list.do%3Fsysparm_query%3Dstatus%253DAvailable%26sysparm_first_row%3D1%26sysparm_view%3D"},"link_type":"single","multi_link_script":"","id":"949716631fae490081d8e495bf63f9b5","name":"Vehicle Inventory","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TableOutput","mode":"glide_record","conditionType":"simple","query":"status=Available","sortBy":"","table":"x_1394714_lva1_loaner_vehicle_catalog","title":{"type":"String","mode":"string","value":""},"columns":[{"name":"status","label":"Status"},{"name":"vehicle_make","label":"Vehicle Make"},{"name":"vehicle_model","label":"Vehicle Model"},{"name":"number","label":"Number"}],"showColumnHeaders":true,"noResultsMessage":{"type":"String","mode":"string","value":"No available vehicles"},"id":"bbaa9682a93c4e32ac5019180a8532bc","name":"View Vehicle Inventory","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"949716631fae490081d8e495bf63f9b5","target_node_id":"cd9a65209532422b9dd5c5da54933103","id":"725f88e8ac3648828718680cec4c7112"},{"type":"Edge","source_node_id":"766f607d18e9481697f8f218a1419cad","target_node_id":"bbaa9682a93c4e32ac5019180a8532bc","id":"722aa0af780f4fd484ba2936522102d3"},{"type":"Edge","source_node_id":"bbaa9682a93c4e32ac5019180a8532bc","target_node_id":"949716631fae490081d8e495bf63f9b5","id":"b8775ce94f7940b5b1e17f0fde9a185b"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"ded9564883bc1210559e6f60ceaad348","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"5d948b6c834d96d0559e6f60ceaad34b","name":"Vehicle Inventory","key_phrases":["Vehicle Inventory","View vehicle inventory","Show me available vehicles"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"}],"triggerable_by_notification":false,"description":"View list of available vehicles","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Vehicle Inventory","library":false,"csTopicId":"3d368bac838d96d0559e6f60ceaad3fc","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>5d948b6c834d96d0559e6f60ceaad34b</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "766f607d18e9481697f8f218a1419cad": {
+          "id": "766f607d18e9481697f8f218a1419cad",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Here’s a list of all available vehicles."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "cd9a65209532422b9dd5c5da54933103": {
+          "id": "cd9a65209532422b9dd5c5da54933103",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "949716631fae490081d8e495bf63f9b5": {
+          "id": "949716631fae490081d8e495bf63f9b5",
+          "stepType": "LinkOutput",
+          "name": "Vehicle Inventory",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev280871.service-now.com/now/nav/ui/classic/params/target/x_1394714_lva1_loaner_vehicle_catalog_list.do%3Fsysparm_query%3Dstatus%253DAvailable%26sysparm_first_row%3D1%26sysparm_view%3D"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Click Here!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Show me available vehicles"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "bbaa9682a93c4e32ac5019180a8532bc": {
+          "id": "bbaa9682a93c4e32ac5019180a8532bc",
+          "stepType": "TableOutput",
+          "name": "View Vehicle Inventory",
+          "header": {
+            "value": "",
+            "mode": "simple"
+          },
+          "displayColumnHeaders": true,
+          "dataSourceType": "table",
+          "script": "",
+          "tableName": "x_1394714_lva1_loaner_vehicle_catalog",
+          "sortByColumns": [],
+          "tableCondition": {
+            "mode": "glide_query",
+            "value": "status=Available"
+          },
+          "columns": [
+            {
+              "key": "status",
+              "value": "Status",
+              "label": "Status"
+            },
+            {
+              "key": "vehicle_make",
+              "value": "Vehicle Make",
+              "label": "Vehicle Make"
+            },
+            {
+              "key": "vehicle_model",
+              "value": "Vehicle Model",
+              "label": "Vehicle Model"
+            },
+            {
+              "key": "number",
+              "value": "Number",
+              "label": "Number"
+            }
+          ],
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "No available vehicles"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "725f88e8ac3648828718680cec4c7112",
+          "edgeType": "Edge",
+          "source": "949716631fae490081d8e495bf63f9b5",
+          "target": "cd9a65209532422b9dd5c5da54933103",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "722aa0af780f4fd484ba2936522102d3",
+          "edgeType": "Edge",
+          "source": "766f607d18e9481697f8f218a1419cad",
+          "target": "bbaa9682a93c4e32ac5019180a8532bc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b8775ce94f7940b5b1e17f0fde9a185b",
+          "edgeType": "Edge",
+          "source": "bbaa9682a93c4e32ac5019180a8532bc",
+          "target": "949716631fae490081d8e495bf63f9b5",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <name>Vehicle Inventory</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 21:24:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7936cbac838d96d0559e6f60ceaad302</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cb_design_topic_7936cbac838d96d0559e6f60ceaad302</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 21:24:44</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

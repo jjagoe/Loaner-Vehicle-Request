@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_announcement_portal">
+    <m2m_announcement_portal action="DELETE">
+        <announcement display_value="">906469fe83f49a10559e6f60ceaad369</announcement>
+        <order>100</order>
+        <sp_portal display_value="Top Fleet Solutions">0ade925a83b81210559e6f60ceaad398</sp_portal>
+        <sys_class_name>m2m_announcement_portal</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-26 04:05:48</sys_created_on>
+        <sys_id>ba5869fe83f49a10559e6f60ceaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.Top Fleet Solutions</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>m2m_announcement_portal_ba5869fe83f49a10559e6f60ceaad370</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-26 04:05:48</sys_updated_on>
+    </m2m_announcement_portal>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>m2m_announcement_portal_ba5869fe83f49a10559e6f60ceaad370</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_announcement_portal"><m2m_announcement_portal action="INSERT_OR_UPDATE"><announcement display_value="">906469fe83f49a10559e6f60ceaad369</announcement><order>100</order><sp_portal display_value="Top Fleet Solutions">0ade925a83b81210559e6f60ceaad398</sp_portal><sys_class_name>m2m_announcement_portal</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2024-09-26 04:05:48</sys_created_on><sys_id>ba5869fe83f49a10559e6f60ceaad370</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.Top Fleet Solutions</sys_name><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope><sys_update_name>m2m_announcement_portal_ba5869fe83f49a10559e6f60ceaad370</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-09-26 04:05:48</sys_updated_on></m2m_announcement_portal></record_update>]]></payload>
+        <payload_hash>1694069325</payload_hash>
+        <record_name>.Top Fleet Solutions</record_name>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-26 04:05:48</sys_created_on>
+        <sys_id>0c88e1be83389a10559e6f60ceaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1922c81aad10000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-26 04:05:48</sys_updated_on>
+        <type>Portal Announcements</type>
+        <update_guid>0088e1be43389a10d045e6e27d3f8194</update_guid>
+        <update_guid_history>0088e1be43389a10d045e6e27d3f8194:1694069325</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".Top Fleet Solutions">117a1eec838d56d0559e6f60ceaad33b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 18:13:25</sys_created_on>
+        <sys_db_object display_value="" name="m2m_announcement_portal">m2m_announcement_portal</sys_db_object>
+        <sys_id>e01275f077a1460cae5d2f9004017510</sys_id>
+        <sys_metadata>ba5869fe83f49a10559e6f60ceaad370</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.Top Fleet Solutions</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>m2m_announcement_portal_ba5869fe83f49a10559e6f60ceaad370</sys_update_name>
+        <sys_update_version display_value="m2m_announcement_portal_ba5869fe83f49a10559e6f60ceaad370">0c88e1be83389a10559e6f60ceaad394</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 18:13:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

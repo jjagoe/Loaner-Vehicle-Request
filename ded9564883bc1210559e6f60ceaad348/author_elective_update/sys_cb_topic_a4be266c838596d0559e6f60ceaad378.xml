@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>a5ce18a1536b101024faddeeff7b12bb</category>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Request Loaner Vehicle</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3533206eca6844cba9f3124805349bff": {
+          "id": "3533206eca6844cba9f3124805349bff",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "! I can help you request a loaner vehicle. Let’s get started."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "44b5960aeff349f4a91bb7cea08d69dc": {
+          "id": "44b5960aeff349f4a91bb7cea08d69dc",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "384cff6a9c2641e68315b613fa04da7d",
+          "edgeType": "Edge",
+          "source": "3533206eca6844cba9f3124805349bff",
+          "target": "44b5960aeff349f4a91bb7cea08d69dc",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>Vehicle Request,I need a loaner vehicle,Request a vehicle,Loaner car</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Vehicle Request</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 19:41:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a4be266c838596d0559e6f60ceaad378</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Vehicle Request</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cb_topic_a4be266c838596d0559e6f60ceaad378</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 20:12:10</sys_updated_on>
+        <title>Vehicle Request</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="DELETE" query="documentkey=a4be266c838596d0559e6f60ceaad378"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>sys_cb_topic_a4be266c838596d0559e6f60ceaad378</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category>a5ce18a1536b101024faddeeff7b12bb</category><channels/><connect_queue/><context_profiles/><description>Request Loaner Vehicle</description><dialog_acts_enabled>false</dialog_acts_enabled><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><foundational>false</foundational><graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3533206eca6844cba9f3124805349bff": {
+          "id": "3533206eca6844cba9f3124805349bff",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "! I can help you request a loaner vehicle. Let’s get started."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "44b5960aeff349f4a91bb7cea08d69dc": {
+          "id": "44b5960aeff349f4a91bb7cea08d69dc",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "384cff6a9c2641e68315b613fa04da7d",
+          "edgeType": "Edge",
+          "source": "3533206eca6844cba9f3124805349bff",
+          "target": "44b5960aeff349f4a91bb7cea08d69dc",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph><key_phrases>Vehicle Request,I need a loaner vehicle,Request a vehicle,Loaner car</key_phrases><library>false</library><live_agent>false</live_agent><model_type>nlu_keyword</model_type><modify_confirmation_enabled>false</modify_confirmation_enabled><name>Vehicle Request</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><root_topic_id/><secure_custom_input_control>false</secure_custom_input_control><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2024-10-01 19:41:51</sys_created_on><sys_domain>global</sys_domain><sys_id>a4be266c838596d0559e6f60ceaad378</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Vehicle Request</sys_name><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope><sys_update_name>sys_cb_topic_a4be266c838596d0559e6f60ceaad378</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-10-01 20:12:10</sys_updated_on><title>Vehicle Request</title><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type></sys_cb_topic><sys_translated_text action="delete_multiple" query="documentkey=a4be266c838596d0559e6f60ceaad378"/></record_update>]]></payload>
+        <payload_hash>-1645538624</payload_hash>
+        <record_name>Vehicle Request</record_name>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 20:12:10</sys_created_on>
+        <sys_id>3ca5b66c830996d0559e6f60ceaad3e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19249b633810000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 20:12:10</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>70a5b66c5f0996d05fa56e8fa042dbe5</update_guid>
+        <update_guid_history>70a5b66c5f0996d05fa56e8fa042dbe5:-1645538624,23453ae8590996d01fbacdd4bf199ed3:893887360,90b4fae0a50996d0af3f7ba84b5cb5a1:-2101127050,2b3f2e6498c596d064c424e084b02b8f:1846836052,ecbe626430c596d09b7e7aa818d11196:-162377663</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-01 20:29:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>006e3a65ac8640e482672121a915acc4</sys_id>
+        <sys_metadata>a4be266c838596d0559e6f60ceaad378</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vehicle Request</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_a4be266c838596d0559e6f60ceaad378</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_a4be266c838596d0559e6f60ceaad378">3ca5b66c830996d0559e6f60ceaad3e5</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 20:29:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
