@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="INSERT_OR_UPDATE">
+        <cs_topic_id display_value="_PRVW__15096d8d34c9ded08e926edcfdaad9be">99096d8d83c9ded0559e6f60ceaad3bf</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[{"variable_name":"lva_issues","nlu_entity":"","nlu_entity_label":""},{"variable_name":"issue_solved_","nlu_entity":"","nlu_entity_label":""},{"variable_name":"help","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-03 03:54:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>95092585830dded0559e6f60ceaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cs_topic_language_95092585830dded0559e6f60ceaad36c</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-03 03:54:23</sys_updated_on>
+    </sys_cs_topic_language>
+</record_update>
