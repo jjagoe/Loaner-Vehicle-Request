@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="DELETE">
+        <calling_cs_topic_id display_value="Loaner Request Issues">e9e714c983419ed0559e6f60ceaad3a4</calling_cs_topic_id>
+        <library_cs_topic_id display_value="Transfer to Live Agent">9d384761b3633300dbbf6030c6a8dcaa</library_cs_topic_id>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"Transfer to Live Agent","library_topic_id":"9d384761b3633300dbbf6030c6a8dcaa","library_topic_is_template":false,"parameter-mappings":[],"return-value-mappings":[],"id":"24c9bb1d909044bbba297af0b4577139","name":"Live Agent","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}</library_usage>
+        <node_id>24c9bb1d909044bbba297af0b4577139</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-16 20:41:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>354c40e983d11210559e6f60ceaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_354c40e983d11210559e6f60ceaad39a</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-16 20:41:52</sys_updated_on>
+    </sys_cs_topic_library_usage>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>sys_cs_topic_library_usage_354c40e983d11210559e6f60ceaad39a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage"><sys_cs_topic_library_usage action="INSERT_OR_UPDATE"><calling_cs_topic_id display_value="Loaner Request Issues">e9e714c983419ed0559e6f60ceaad3a4</calling_cs_topic_id><library_cs_topic_id display_value="Transfer to Live Agent">9d384761b3633300dbbf6030c6a8dcaa</library_cs_topic_id><library_usage>{"type":"LibraryCall","library_topic_name":"Transfer to Live Agent","library_topic_id":"9d384761b3633300dbbf6030c6a8dcaa","library_topic_is_template":false,"parameter-mappings":[],"return-value-mappings":[],"id":"24c9bb1d909044bbba297af0b4577139","name":"Live Agent","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}</library_usage><node_id>24c9bb1d909044bbba297af0b4577139</node_id><sys_class_name>sys_cs_topic_library_usage</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2024-10-16 20:41:52</sys_created_on><sys_domain>global</sys_domain><sys_id>354c40e983d11210559e6f60ceaad39a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope><sys_update_name>sys_cs_topic_library_usage_354c40e983d11210559e6f60ceaad39a</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-10-16 20:41:52</sys_updated_on></sys_cs_topic_library_usage></record_update>]]></payload>
+        <payload_hash>-2018629328</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-16 20:41:52</sys_created_on>
+        <sys_id>b94c40e983d11210559e6f60ceaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1929710c7990000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-16 20:41:52</sys_updated_on>
+        <type>Topic Library Usage</type>
+        <update_guid>7d4c40e9ead112105b57097cd9124a9b</update_guid>
+        <update_guid_history>7d4c40e9ead112105b57097cd9124a9b:-2018629328</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-17 02:13:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_library_usage">sys_cs_topic_library_usage</sys_db_object>
+        <sys_id>0ad29532b7724dce850efca632eb8da1</sys_id>
+        <sys_metadata>354c40e983d11210559e6f60ceaad39a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_library_usage_354c40e983d11210559e6f60ceaad39a</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_library_usage_354c40e983d11210559e6f60ceaad39a">b94c40e983d11210559e6f60ceaad39c</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-17 02:13:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

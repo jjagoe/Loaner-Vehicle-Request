@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
     <sys_cb_design_topic action="INSERT_OR_UPDATE">
         <compiled_topic display_value="Loaner Request Issues">e9e714c983419ed0559e6f60ceaad3a4</compiled_topic>
-        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"652b7cbcc0fd44bf9fbd6d02b5f44771","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"652b7cbcc0fd44bf9fbd6d02b5f44771"}],"goals":[{"name":"primary","trigger_id":"652b7cbcc0fd44bf9fbd6d02b5f44771","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hey {0}! Welcome to the Loaner Vehicle Topics.\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"},"id":"b54e5a0d11e840ad8d0097f8e8ba7eb7","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"0fb64d854ca44912b9b38e9b9625c097","name":"End","expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"Large image with text","cardFields":[{"name":"title","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Loaner Vehicle Request Issues\", vaContext.getRequesterLang())"},"required":true},{"name":"description","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Welcome to Loaner Vehicle Issues topic, solve your issue with the help of our Loaner Vehicle Issues BOT.\", vaContext.getRequesterLang())"},"required":false},{"name":"image","value":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"truck_12579537_1727919083565.png\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","mode":"string","value":""},"required":false}],"id":"50b3ba9e04f24180a28a2a222de7b512","name":"LVA Issues","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"0b508578267746099cbed469eae9fe5c","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"How may I help you in Loaner Vehicle?\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":""},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Can't submit a Loaner Vehicle Request","expression":{"type":"Applicability","mode":"query","value":"lva_issues=Can't submit a Loaner Vehicle Request"},"id":"f10d02482ad8401aa9a83787d3dfbff4","name":"Can't submit a Loaner Vehicle Request","expert_mode":false},{"type":"Branch","label":"FAQs for Loaner Vehicle Request","expression":{"type":"Applicability","mode":"query","value":"lva_issues=FAQs for Loaner Vehicle Request"},"id":"15690434a73d4b46bf393cccc0b096a5","name":"FAQs for Loaner Vehicle Request","expert_mode":false},{"type":"Branch","label":"Show me available vehicles","expression":{"type":"Applicability","mode":"query","value":"lva_issues=Show me available vehicles"},"id":"3815adefdd814419a2e2a96fac68febd","name":"Show me available vehicles","expert_mode":false},{"type":"Branch","label":"Request a Loaner Vehicle","expression":{"type":"Applicability","mode":"query","value":"lva_issues=Request a Loaner Vehicle"},"id":"0050ff0ce0794e5fb022aa190e481c0e","name":"Request a Loaner Vehicle","expert_mode":false}],"id":"7e3b2fb53a574c4e81e7e12c3fefde1e","goal_id":"primary","expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:5513dc8d83c95ed0559e6f60ceaad3d9:node:2e480ea59764491da9bf555dd83e692b:field:Header\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to get the step by step instructions to Request a Vehicle.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/lva/en/this-guide-provides-step-by-step-instructions-for-submitting-a-loaner?id=kb_article_view&amp;sysparm_article=KB0010002"},"link_type":"single","multi_link_script":"","id":"2e480ea59764491da9bf555dd83e692b","name":"Knowledge Base","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"InputPrompt","variable_id":"2682547a6667485eaaec36393fe77be8","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Does this solve your issue?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"2014a4a44b6247eba7be265de8d2b1a1","name":"Issue Solved?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"TerminateGoal","goal_id":"primary","id":"84434953ccbe46ec912ecec1b9e05966","name":"ImplicitEnd__bb02ababdd464624807aed7f6e6377ed","expert_mode":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Yes","expression":{"type":"Applicability","mode":"query","value":"issue_solved_=true"},"id":"d00a389c33e841b99026d6eadfe0ba12","name":"Yes","expert_mode":false},{"type":"Branch","label":"No","expression":{"type":"Applicability","mode":"query","value":"issue_solved_=false"},"id":"dccf461ff1cf441a9d13cbaf3dd3a5e1","name":"No","expert_mode":false}],"id":"591471a6b8cf4593a8d2aa036368c2bb","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:5513dc8d83c95ed0559e6f60ceaad3d9:node:a9528a22c417488ba95a337caa7348c2:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"a9528a22c417488ba95a337caa7348c2","name":"Great","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"40d8f1c1efbb4fdfb3558a51e8590248","name":"Help","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"4b127bb3de6c41cd9309b66c8dd662b3","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Help\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"FAQs for Loaner Vehicle Request\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to get the FAQs for Loaner Vehicle Request.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/lva/en/faqs-for-the-loaner-vehicle-request-application?id=kb_article_view&amp;sysparm_article=KB0010004"},"link_type":"single","multi_link_script":"","id":"d9876d27e4e843cba4ee2e091e8c926a","name":"Knowledge Base","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Show me available vehicles\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to get a list of available vehicles.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/now/nav/ui/classic/params/target/x_1394714_lva1_loaner_vehicle_catalog_list.do%3Fsysparm_query%3Dstatus%253DAvailable%26sysparm_first_row%3D1%26sysparm_view%3D"},"link_type":"single","multi_link_script":"","id":"aaae0fab2fff478fb7f3b52a784972a3","name":"Vehicle Inventory","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Request Loaner Vehicle\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to request a new Loaner Vehicle.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/now/nav/ui/classic/params/target/com.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D5690209483f49210559e6f60ceaad3d3"},"link_type":"single","multi_link_script":"","id":"4c9eec630e9f460c9fc61f73dbb8c6b8","name":"Request Loaner Vehicle","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"40d8f1c1efbb4fdfb3558a51e8590248","target_node_id":"84434953ccbe46ec912ecec1b9e05966","id":"e61246d96c434f7fb7d7d128a3bae7d3"},{"type":"Edge","source_node_id":"b54e5a0d11e840ad8d0097f8e8ba7eb7","target_node_id":"50b3ba9e04f24180a28a2a222de7b512","id":"a4c18fa2aa0b45ee9ac40c6fa6610d56"},{"type":"Edge","source_node_id":"50b3ba9e04f24180a28a2a222de7b512","target_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","id":"9442ede69d924187b40eb6aa189c0255"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"2e480ea59764491da9bf555dd83e692b","branch_id":"f10d02482ad8401aa9a83787d3dfbff4","id":"d2eabd5f074c4ead8370709eff4a868d","name":"f10d02482ad8401aa9a83787d3dfbff4"},{"type":"Edge","source_node_id":"2e480ea59764491da9bf555dd83e692b","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"ebcd534d0b834ec6a7d8298ed8ba8588"},{"type":"Edge","source_node_id":"2014a4a44b6247eba7be265de8d2b1a1","target_node_id":"591471a6b8cf4593a8d2aa036368c2bb","id":"e5aaa4890669474e81a98345f2ef665c"},{"type":"Edge","source_node_id":"591471a6b8cf4593a8d2aa036368c2bb","target_node_id":"a9528a22c417488ba95a337caa7348c2","branch_id":"d00a389c33e841b99026d6eadfe0ba12","id":"e1fc1450de31412bb711b7814f790079","name":"d00a389c33e841b99026d6eadfe0ba12"},{"type":"Edge","source_node_id":"a9528a22c417488ba95a337caa7348c2","target_node_id":"0fb64d854ca44912b9b38e9b9625c097","id":"b60c88f956764ab68ec798cf428cf64d"},{"type":"Edge","source_node_id":"591471a6b8cf4593a8d2aa036368c2bb","target_node_id":"40d8f1c1efbb4fdfb3558a51e8590248","branch_id":"dccf461ff1cf441a9d13cbaf3dd3a5e1","id":"5f8b3ffaa36a43358043a4e8fde3cfe2","name":"dccf461ff1cf441a9d13cbaf3dd3a5e1"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"d9876d27e4e843cba4ee2e091e8c926a","branch_id":"15690434a73d4b46bf393cccc0b096a5","id":"c27612cad04d45f5871a00ee755f52cb","name":"15690434a73d4b46bf393cccc0b096a5"},{"type":"Edge","source_node_id":"d9876d27e4e843cba4ee2e091e8c926a","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"5a3df81e407f4574883c216ccc51faa3"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"aaae0fab2fff478fb7f3b52a784972a3","branch_id":"3815adefdd814419a2e2a96fac68febd","id":"1991007216a54b9e9b890ca9b7195b05","name":"3815adefdd814419a2e2a96fac68febd"},{"type":"Edge","source_node_id":"aaae0fab2fff478fb7f3b52a784972a3","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"4e1fd5b68a054ee8a99499066425856c"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"4c9eec630e9f460c9fc61f73dbb8c6b8","branch_id":"0050ff0ce0794e5fb022aa190e481c0e","id":"6b69caaca0f944388081cf6964130b68","name":"0050ff0ce0794e5fb022aa190e481c0e"},{"type":"Edge","source_node_id":"4c9eec630e9f460c9fc61f73dbb8c6b8","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"e0e401f975064d6ab8c150dbd8c2c92b"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Show me available vehicles","element":"Show me available vehicles"},{"name":"Can't submit a Loaner Vehicle Request","element":"Can't submit a Loaner Vehicle Request"},{"name":"FAQs for Loaner Vehicle Request","element":"FAQs for Loaner Vehicle Request"},{"name":"Request a Loaner Vehicle","element":"Request a Loaner Vehicle"},{"name":"Other","element":"Other"}],"id":"0b508578267746099cbed469eae9fe5c","name":"lva_issues","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"LVA Issues"},{"type":"True/False","id":"2682547a6667485eaaec36393fe77be8","name":"issue_solved_","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Live Agent Support","element":"Live Agent Support"}],"id":"4b127bb3de6c41cd9309b66c8dd662b3","name":"help","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Help"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"ded9564883bc1210559e6f60ceaad348","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"5513dc8d83c95ed0559e6f60ceaad3d9","name":"Loaner Request Issues","key_phrases":["Loaner Request Issues","I need a loaner vehicle","Request a vehicle","Loaner car","Check vehicle availability","Is a vehicle available?","View vehicle inventory","Show me available vehicles","Loaner","Request","Issues"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"}],"triggerable_by_notification":false,"description":"Chatbot for Loaner Request Issues","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Loaner Request Issues","library":false,"csTopicId":"e9e714c983419ed0559e6f60ceaad3a4","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"837912554b954795b9d56e3f7ebc4332","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"837912554b954795b9d56e3f7ebc4332"}],"goals":[{"name":"primary","trigger_id":"837912554b954795b9d56e3f7ebc4332","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hey {0}! Welcome to the Loaner Vehicle Topics.\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"},"id":"b54e5a0d11e840ad8d0097f8e8ba7eb7","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"0fb64d854ca44912b9b38e9b9625c097","name":"End","expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"Large image with text","cardFields":[{"name":"title","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Loaner Vehicle Request Issues\", vaContext.getRequesterLang())"},"required":true},{"name":"description","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Welcome to Loaner Vehicle Issues topic, solve your issue with the help of our Loaner Vehicle Issues BOT.\", vaContext.getRequesterLang())"},"required":false},{"name":"image","value":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"truck_12579537_1727919083565.png\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","mode":"string","value":""},"required":false}],"id":"50b3ba9e04f24180a28a2a222de7b512","name":"LVA Issues","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"0b508578267746099cbed469eae9fe5c","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"How may I help you in Loaner Vehicle?\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":""},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Can't submit a Loaner Vehicle Request","expression":{"type":"Applicability","mode":"query","value":"lva_issues=Can't submit a Loaner Vehicle Request"},"id":"8554a84f2a6f436f837a18f57f9a38e2","name":"Can't submit a Loaner Vehicle Request","expert_mode":false},{"type":"Branch","label":"FAQs for Loaner Vehicle Request","expression":{"type":"Applicability","mode":"query","value":"lva_issues=FAQs for Loaner Vehicle Request"},"id":"33bfd24b097d4a4ea1d9dfd69c0d5d29","name":"FAQs for Loaner Vehicle Request","expert_mode":false},{"type":"Branch","label":"Show me available vehicles","expression":{"type":"Applicability","mode":"query","value":"lva_issues=Show me available vehicles"},"id":"e191e214b23248a1860e6e8c2c97bb90","name":"Show me available vehicles","expert_mode":false},{"type":"Branch","label":"Request a Loaner Vehicle","expression":{"type":"Applicability","mode":"query","value":"lva_issues=Request a Loaner Vehicle"},"id":"d85d425e608e4cc4ace2dcd834e13c56","name":"Request a Loaner Vehicle","expert_mode":false}],"id":"7e3b2fb53a574c4e81e7e12c3fefde1e","goal_id":"primary","expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:5513dc8d83c95ed0559e6f60ceaad3d9:node:2e480ea59764491da9bf555dd83e692b:field:Header\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to get the step by step instructions to Request a Vehicle.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/lva/en/this-guide-provides-step-by-step-instructions-for-submitting-a-loaner?id=kb_article_view&amp;sysparm_article=KB0010002"},"link_type":"single","multi_link_script":"","id":"2e480ea59764491da9bf555dd83e692b","name":"Knowledge Base","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"InputPrompt","variable_id":"2682547a6667485eaaec36393fe77be8","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Does this solve your issue?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"2014a4a44b6247eba7be265de8d2b1a1","name":"Issue Solved?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Yes","expression":{"type":"Applicability","mode":"query","value":"issue_solved_=true"},"id":"7bbe8784375c4f70aecb89eff5171ecc","name":"Yes","expert_mode":false},{"type":"Branch","label":"No","expression":{"type":"Applicability","mode":"query","value":"issue_solved_=false"},"id":"7433a8462f1b4b3a868b9db87103edb6","name":"No","expert_mode":false}],"id":"591471a6b8cf4593a8d2aa036368c2bb","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:5513dc8d83c95ed0559e6f60ceaad3d9:node:a9528a22c417488ba95a337caa7348c2:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"a9528a22c417488ba95a337caa7348c2","name":"Great","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"40d8f1c1efbb4fdfb3558a51e8590248","name":"Help","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"4b127bb3de6c41cd9309b66c8dd662b3","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Help\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"FAQs for Loaner Vehicle Request\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to get the FAQs for Loaner Vehicle Request.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/lva/en/faqs-for-the-loaner-vehicle-request-application?id=kb_article_view&amp;sysparm_article=KB0010004"},"link_type":"single","multi_link_script":"","id":"d9876d27e4e843cba4ee2e091e8c926a","name":"Knowledge Base","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Show me available vehicles\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to get a list of available vehicles.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/now/nav/ui/classic/params/target/x_1394714_lva1_loaner_vehicle_catalog_list.do%3Fsysparm_query%3Dstatus%253DAvailable%26sysparm_first_row%3D1%26sysparm_view%3D"},"link_type":"single","multi_link_script":"","id":"aaae0fab2fff478fb7f3b52a784972a3","name":"Vehicle Inventory","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Request Loaner Vehicle\", vaContext.getRequesterLang())"},"label":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please click on the below link to request a new Loaner Vehicle.\", vaContext.getRequesterLang())"},"url":{"type":"String","mode":"string","value":"https://dev280871.service-now.com/now/nav/ui/classic/params/target/com.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D5690209483f49210559e6f60ceaad3d3"},"link_type":"single","multi_link_script":"","id":"4c9eec630e9f460c9fc61f73dbb8c6b8","name":"Request Loaner Vehicle","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"8f21df95c95a4757b9554cb5f3d43d2f","name":"ImplicitEnd__66c58d076b6e4212bc57e3bb0ae6b07d","expert_mode":false},{"type":"InputPrompt","variable_id":"d7571614b0ec45eb97200d3cbebc07fc","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Is there anything else I can help you with?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"9c2f19c3074e4b32b77afe400aa499a2","name":"Did this Help","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"true","expression":{"type":"Applicability","mode":"query","value":"did_this_help=true"},"id":"c94d3176a0334370b009f03f9efcbbc6","name":"true","expert_mode":false},{"type":"Branch","label":"false","expression":{"type":"Applicability","mode":"query","value":"did_this_help=false"},"id":"85fcc38ccd3b460a8f6aa3dba8a1c07f","name":"false","expert_mode":false}],"id":"9439a855953d4a18845f54a84ea13d45","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:5513dc8d83c95ed0559e6f60ceaad3d9:node:3d9c20c8ef3249a58b5b5d29516563f9:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"3d9c20c8ef3249a58b5b5d29516563f9","name":"No More Help","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Connecting you to a Live Agent\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"52732d13dbc04e6184ebcfaa98c9a7cb","name":"Standby","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false}],"edges":[{"type":"Edge","source_node_id":"9439a855953d4a18845f54a84ea13d45","target_node_id":"8f21df95c95a4757b9554cb5f3d43d2f","branch_id":"c94d3176a0334370b009f03f9efcbbc6","id":"23b42fc11d094d0d8a4345a8b3aba29b","name":"c94d3176a0334370b009f03f9efcbbc6"},{"type":"Edge","source_node_id":"b54e5a0d11e840ad8d0097f8e8ba7eb7","target_node_id":"50b3ba9e04f24180a28a2a222de7b512","id":"a4c18fa2aa0b45ee9ac40c6fa6610d56"},{"type":"Edge","source_node_id":"50b3ba9e04f24180a28a2a222de7b512","target_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","id":"9442ede69d924187b40eb6aa189c0255"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"2e480ea59764491da9bf555dd83e692b","branch_id":"8554a84f2a6f436f837a18f57f9a38e2","id":"d2eabd5f074c4ead8370709eff4a868d","name":"8554a84f2a6f436f837a18f57f9a38e2"},{"type":"Edge","source_node_id":"2e480ea59764491da9bf555dd83e692b","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"ebcd534d0b834ec6a7d8298ed8ba8588"},{"type":"Edge","source_node_id":"2014a4a44b6247eba7be265de8d2b1a1","target_node_id":"591471a6b8cf4593a8d2aa036368c2bb","id":"e5aaa4890669474e81a98345f2ef665c"},{"type":"Edge","source_node_id":"591471a6b8cf4593a8d2aa036368c2bb","target_node_id":"a9528a22c417488ba95a337caa7348c2","branch_id":"7bbe8784375c4f70aecb89eff5171ecc","id":"e1fc1450de31412bb711b7814f790079","name":"7bbe8784375c4f70aecb89eff5171ecc"},{"type":"Edge","source_node_id":"a9528a22c417488ba95a337caa7348c2","target_node_id":"0fb64d854ca44912b9b38e9b9625c097","id":"b60c88f956764ab68ec798cf428cf64d"},{"type":"Edge","source_node_id":"591471a6b8cf4593a8d2aa036368c2bb","target_node_id":"40d8f1c1efbb4fdfb3558a51e8590248","branch_id":"7433a8462f1b4b3a868b9db87103edb6","id":"5f8b3ffaa36a43358043a4e8fde3cfe2","name":"7433a8462f1b4b3a868b9db87103edb6"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"d9876d27e4e843cba4ee2e091e8c926a","branch_id":"33bfd24b097d4a4ea1d9dfd69c0d5d29","id":"c27612cad04d45f5871a00ee755f52cb","name":"33bfd24b097d4a4ea1d9dfd69c0d5d29"},{"type":"Edge","source_node_id":"d9876d27e4e843cba4ee2e091e8c926a","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"5a3df81e407f4574883c216ccc51faa3"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"aaae0fab2fff478fb7f3b52a784972a3","branch_id":"e191e214b23248a1860e6e8c2c97bb90","id":"1991007216a54b9e9b890ca9b7195b05","name":"e191e214b23248a1860e6e8c2c97bb90"},{"type":"Edge","source_node_id":"aaae0fab2fff478fb7f3b52a784972a3","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"4e1fd5b68a054ee8a99499066425856c"},{"type":"Edge","source_node_id":"7e3b2fb53a574c4e81e7e12c3fefde1e","target_node_id":"4c9eec630e9f460c9fc61f73dbb8c6b8","branch_id":"d85d425e608e4cc4ace2dcd834e13c56","id":"6b69caaca0f944388081cf6964130b68","name":"d85d425e608e4cc4ace2dcd834e13c56"},{"type":"Edge","source_node_id":"4c9eec630e9f460c9fc61f73dbb8c6b8","target_node_id":"2014a4a44b6247eba7be265de8d2b1a1","id":"e0e401f975064d6ab8c150dbd8c2c92b"},{"type":"Edge","source_node_id":"9c2f19c3074e4b32b77afe400aa499a2","target_node_id":"9439a855953d4a18845f54a84ea13d45","id":"3e0aec161b0543c3a1a722120e1ee041"},{"type":"Edge","source_node_id":"9439a855953d4a18845f54a84ea13d45","target_node_id":"3d9c20c8ef3249a58b5b5d29516563f9","branch_id":"85fcc38ccd3b460a8f6aa3dba8a1c07f","id":"9c3d127d6acc4da2bcebf510fb44ee62","name":"85fcc38ccd3b460a8f6aa3dba8a1c07f"},{"type":"Edge","source_node_id":"3d9c20c8ef3249a58b5b5d29516563f9","target_node_id":"0fb64d854ca44912b9b38e9b9625c097","id":"abf347d3cd554707bcca444e56e3c7ec"},{"type":"Edge","source_node_id":"40d8f1c1efbb4fdfb3558a51e8590248","target_node_id":"52732d13dbc04e6184ebcfaa98c9a7cb","id":"e61246d96c434f7fb7d7d128a3bae7d3"},{"type":"Edge","source_node_id":"52732d13dbc04e6184ebcfaa98c9a7cb","target_node_id":"9c2f19c3074e4b32b77afe400aa499a2","id":"ce86680f77d2485ba3ddece033e6df62"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Show me available vehicles","element":"Show me available vehicles"},{"name":"Can't submit a Loaner Vehicle Request","element":"Can't submit a Loaner Vehicle Request"},{"name":"FAQs for Loaner Vehicle Request","element":"FAQs for Loaner Vehicle Request"},{"name":"Request a Loaner Vehicle","element":"Request a Loaner Vehicle"},{"name":"Other","element":"Other"}],"id":"0b508578267746099cbed469eae9fe5c","name":"lva_issues","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"LVA Issues"},{"type":"True/False","id":"2682547a6667485eaaec36393fe77be8","name":"issue_solved_","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Live Agent Support","element":"Live Agent Support"}],"id":"4b127bb3de6c41cd9309b66c8dd662b3","name":"help","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Help"},{"type":"True/False","id":"d7571614b0ec45eb97200d3cbebc07fc","name":"did_this_help","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"ded9564883bc1210559e6f60ceaad348","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"5513dc8d83c95ed0559e6f60ceaad3d9","name":"Loaner Request Issues","key_phrases":["Loaner Request Issues","I need a loaner vehicle","Request a vehicle","Loaner car","Check vehicle availability","Is a vehicle available?","View vehicle inventory","Show me available vehicles","Loaner","Request","Issues"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":true,"design_categories":[{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"}],"triggerable_by_notification":false,"description":"Chatbot for Loaner Request Issues","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Loaner Request Issues","library":false,"csTopicId":"e9e714c983419ed0559e6f60ceaad3a4","readOnly":false,"nluMapping":"[]"}</design_definition>
         <design_topic_id>5513dc8d83c95ed0559e6f60ceaad3d9</design_topic_id>
         <graph>{
   "graph_api_version": "1.0.66",
@@ -294,10 +294,6 @@
           "variableId": "2682547a6667485eaaec36393fe77be8",
           "detailDescription": ""
         },
-        "84434953ccbe46ec912ecec1b9e05966": {
-          "id": "84434953ccbe46ec912ecec1b9e05966",
-          "stepType": "ImplicitEnd"
-        },
         "591471a6b8cf4593a8d2aa036368c2bb": {
           "id": "591471a6b8cf4593a8d2aa036368c2bb",
           "stepType": "Decision",
@@ -569,16 +565,130 @@
             "mode": "simple"
           },
           "listOfLinks": ""
+        },
+        "8f21df95c95a4757b9554cb5f3d43d2f": {
+          "id": "8f21df95c95a4757b9554cb5f3d43d2f",
+          "stepType": "ImplicitEnd"
+        },
+        "9c2f19c3074e4b32b77afe400aa499a2": {
+          "id": "9c2f19c3074e4b32b77afe400aa499a2",
+          "stepType": "BooleanPrompt",
+          "name": "Did this Help",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Is there anything else I can help you with?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "d7571614b0ec45eb97200d3cbebc07fc",
+          "detailDescription": ""
+        },
+        "9439a855953d4a18845f54a84ea13d45": {
+          "id": "9439a855953d4a18845f54a84ea13d45",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "3d9c20c8ef3249a58b5b5d29516563f9": {
+          "id": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "stepType": "TextOutput",
+          "name": "No More Help",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "I'm glad to hear that! Have a nice day"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "dd120cb6f4a14da6b9fa8bfce0ab54df"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "52732d13dbc04e6184ebcfaa98c9a7cb": {
+          "id": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "stepType": "TextOutput",
+          "name": "Standby",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Connecting you to a Live Agent"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "57fc1c791da14b129fad48451b4f5551"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
         }
       },
       "edges": [
         {
-          "id": "e61246d96c434f7fb7d7d128a3bae7d3",
-          "edgeType": "Edge",
-          "source": "40d8f1c1efbb4fdfb3558a51e8590248",
-          "target": "84434953ccbe46ec912ecec1b9e05966",
+          "id": "23b42fc11d094d0d8a4345a8b3aba29b",
+          "edgeType": "Branch",
+          "source": "9439a855953d4a18845f54a84ea13d45",
+          "target": "8f21df95c95a4757b9554cb5f3d43d2f",
           "sourcePort": "",
-          "targetPort": ""
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_this_help=true",
+            "mode": "query"
+          },
+          "label": "true"
         },
         {
           "id": "a4c18fa2aa0b45ee9ac40c6fa6610d56",
@@ -721,6 +831,51 @@
           "target": "2014a4a44b6247eba7be265de8d2b1a1",
           "sourcePort": "",
           "targetPort": ""
+        },
+        {
+          "id": "3e0aec161b0543c3a1a722120e1ee041",
+          "edgeType": "Edge",
+          "source": "9c2f19c3074e4b32b77afe400aa499a2",
+          "target": "9439a855953d4a18845f54a84ea13d45",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9c3d127d6acc4da2bcebf510fb44ee62",
+          "edgeType": "Branch",
+          "source": "9439a855953d4a18845f54a84ea13d45",
+          "target": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_this_help=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "abf347d3cd554707bcca444e56e3c7ec",
+          "edgeType": "Edge",
+          "source": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "target": "0fb64d854ca44912b9b38e9b9625c097",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e61246d96c434f7fb7d7d128a3bae7d3",
+          "edgeType": "Edge",
+          "source": "40d8f1c1efbb4fdfb3558a51e8590248",
+          "target": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ce86680f77d2485ba3ddece033e6df62",
+          "edgeType": "Edge",
+          "source": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "target": "9c2f19c3074e4b32b77afe400aa499a2",
+          "sourcePort": "",
+          "targetPort": ""
         }
       ]
     }
@@ -795,6 +950,16 @@
       "category": "vaInputs",
       "nodeId": "40d8f1c1efbb4fdfb3558a51e8590248",
       "isHidden": false
+    },
+    "d7571614b0ec45eb97200d3cbebc07fc": {
+      "id": "d7571614b0ec45eb97200d3cbebc07fc",
+      "name": "did_this_help",
+      "label": "Did This Help",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "9c2f19c3074e4b32b77afe400aa499a2",
+      "isHidden": false
     }
   }
 }</graph>
@@ -804,14 +969,14 @@
         <sys_created_on>2024-10-02 21:59:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>25e714c983419ed0559e6f60ceaad3b8</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>FlowTopic</sys_name>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>sys_cb_design_topic_25e714c983419ed0559e6f60ceaad3b8</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-10-03 04:54:17</sys_updated_on>
+        <sys_updated_on>2024-10-17 02:20:24</sys_updated_on>
         <type>FlowTopic</type>
     </sys_cb_design_topic>
 </record_update>

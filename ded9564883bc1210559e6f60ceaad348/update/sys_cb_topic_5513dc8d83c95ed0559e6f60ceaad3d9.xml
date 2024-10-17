@@ -2,7 +2,7 @@
     <sys_cb_topic action="INSERT_OR_UPDATE">
         <applicability/>
         <applicability_mode>query</applicability_mode>
-        <autopilot_topic>false</autopilot_topic>
+        <autopilot_topic>true</autopilot_topic>
         <category>0a9d30bdebc31110add0ddde23522847</category>
         <channels/>
         <connect_queue/>
@@ -303,10 +303,6 @@
           "variableId": "2682547a6667485eaaec36393fe77be8",
           "detailDescription": ""
         },
-        "84434953ccbe46ec912ecec1b9e05966": {
-          "id": "84434953ccbe46ec912ecec1b9e05966",
-          "stepType": "ImplicitEnd"
-        },
         "591471a6b8cf4593a8d2aa036368c2bb": {
           "id": "591471a6b8cf4593a8d2aa036368c2bb",
           "stepType": "Decision",
@@ -578,16 +574,130 @@
             "mode": "simple"
           },
           "listOfLinks": ""
+        },
+        "8f21df95c95a4757b9554cb5f3d43d2f": {
+          "id": "8f21df95c95a4757b9554cb5f3d43d2f",
+          "stepType": "ImplicitEnd"
+        },
+        "9c2f19c3074e4b32b77afe400aa499a2": {
+          "id": "9c2f19c3074e4b32b77afe400aa499a2",
+          "stepType": "BooleanPrompt",
+          "name": "Did this Help",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Is there anything else I can help you with?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "d7571614b0ec45eb97200d3cbebc07fc",
+          "detailDescription": ""
+        },
+        "9439a855953d4a18845f54a84ea13d45": {
+          "id": "9439a855953d4a18845f54a84ea13d45",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "3d9c20c8ef3249a58b5b5d29516563f9": {
+          "id": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "stepType": "TextOutput",
+          "name": "No More Help",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "I'm glad to hear that! Have a nice day"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "dd120cb6f4a14da6b9fa8bfce0ab54df"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "52732d13dbc04e6184ebcfaa98c9a7cb": {
+          "id": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "stepType": "TextOutput",
+          "name": "Standby",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Connecting you to a Live Agent"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "57fc1c791da14b129fad48451b4f5551"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
         }
       },
       "edges": [
         {
-          "id": "e61246d96c434f7fb7d7d128a3bae7d3",
-          "edgeType": "Edge",
-          "source": "40d8f1c1efbb4fdfb3558a51e8590248",
-          "target": "84434953ccbe46ec912ecec1b9e05966",
+          "id": "23b42fc11d094d0d8a4345a8b3aba29b",
+          "edgeType": "Branch",
+          "source": "9439a855953d4a18845f54a84ea13d45",
+          "target": "8f21df95c95a4757b9554cb5f3d43d2f",
           "sourcePort": "",
-          "targetPort": ""
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_this_help=true",
+            "mode": "query"
+          },
+          "label": "true"
         },
         {
           "id": "a4c18fa2aa0b45ee9ac40c6fa6610d56",
@@ -730,6 +840,51 @@
           "target": "2014a4a44b6247eba7be265de8d2b1a1",
           "sourcePort": "",
           "targetPort": ""
+        },
+        {
+          "id": "3e0aec161b0543c3a1a722120e1ee041",
+          "edgeType": "Edge",
+          "source": "9c2f19c3074e4b32b77afe400aa499a2",
+          "target": "9439a855953d4a18845f54a84ea13d45",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9c3d127d6acc4da2bcebf510fb44ee62",
+          "edgeType": "Branch",
+          "source": "9439a855953d4a18845f54a84ea13d45",
+          "target": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_this_help=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "abf347d3cd554707bcca444e56e3c7ec",
+          "edgeType": "Edge",
+          "source": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "target": "0fb64d854ca44912b9b38e9b9625c097",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e61246d96c434f7fb7d7d128a3bae7d3",
+          "edgeType": "Edge",
+          "source": "40d8f1c1efbb4fdfb3558a51e8590248",
+          "target": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ce86680f77d2485ba3ddece033e6df62",
+          "edgeType": "Edge",
+          "source": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "target": "9c2f19c3074e4b32b77afe400aa499a2",
+          "sourcePort": "",
+          "targetPort": ""
         }
       ]
     }
@@ -804,6 +959,16 @@
       "category": "vaInputs",
       "nodeId": "40d8f1c1efbb4fdfb3558a51e8590248",
       "isHidden": false
+    },
+    "d7571614b0ec45eb97200d3cbebc07fc": {
+      "id": "d7571614b0ec45eb97200d3cbebc07fc",
+      "name": "did_this_help",
+      "label": "Did This Help",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "9c2f19c3074e4b32b77afe400aa499a2",
+      "isHidden": false
     }
   }
 }</graph>
@@ -828,14 +993,14 @@
         <sys_created_on>2024-10-02 21:38:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>5513dc8d83c95ed0559e6f60ceaad3d9</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Loaner Request Issues</sys_name>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
         <sys_update_name>sys_cb_topic_5513dc8d83c95ed0559e6f60ceaad3d9</sys_update_name>
         <sys_updated_by>John</sys_updated_by>
-        <sys_updated_on>2024-10-03 04:54:15</sys_updated_on>
+        <sys_updated_on>2024-10-17 02:20:21</sys_updated_on>
         <title>Loaner Request Issues</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>

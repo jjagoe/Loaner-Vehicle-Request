@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_agent_chat_config">
+    <sp_agent_chat_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>Chat</name>
+        <order>100</order>
+        <portal>0ade925a83b81210559e6f60ceaad398</portal>
+        <public>false</public>
+        <roles/>
+        <server_script><![CDATA[(function($sp) {
+	return {
+		live_agent_queue: $sp.getDisplayValue('sp_chat_queue')
+		};
+})($sp);]]></server_script>
+        <sys_class_name>sp_agent_chat_config</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-17 01:22:00</sys_created_on>
+        <sys_id>2a4c4de5831d5210559e6f60ceaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Chat</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sp_agent_chat_config_2a4c4de5831d5210559e6f60ceaad391</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-17 01:22:00</sys_updated_on>
+    </sp_agent_chat_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a4c4de5831d5210559e6f60ceaad391"/>
+</record_update>
