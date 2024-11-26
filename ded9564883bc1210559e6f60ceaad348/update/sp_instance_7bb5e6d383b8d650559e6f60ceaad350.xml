@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>3</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">667918a283b4d210559e6f60ceaad363</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-27 21:50:20</sys_created_on>
+        <sys_id>7bb5e6d383b8d650559e6f60ceaad350</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sp_instance_7bb5e6d383b8d650559e6f60ceaad350</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-01 20:53:02</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p><img src=\"https://dev280871.service-now.com/x_1394714_lva1.Transit%20350.png\" /></p>",
+		"displayValue": "<p><img src=\"https://dev280871.service-now.com/x_1394714_lva1.Transit%20350.png\" /></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=7bb5e6d383b8d650559e6f60ceaad350"/>
+</record_update>

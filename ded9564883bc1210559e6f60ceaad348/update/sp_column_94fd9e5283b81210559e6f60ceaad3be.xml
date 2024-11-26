@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <size/>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">50fd9e5283b81210559e6f60ceaad3ae</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-24 18:42:19</sys_created_on>
+        <sys_id>94fd9e5283b81210559e6f60ceaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sp_column_94fd9e5283b81210559e6f60ceaad3be</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-24 18:42:19</sys_updated_on>
+    </sp_column>
+</record_update>

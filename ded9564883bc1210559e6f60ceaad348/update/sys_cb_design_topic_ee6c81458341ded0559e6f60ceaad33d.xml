@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__ea6c8145d041ded029bc73dbc6381935">ee6c81458341ded0559e6f60ceaad336</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"63783e5738f348a184ded710d68b1261","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"63783e5738f348a184ded710d68b1261"}],"goals":[{"name":"primary","trigger_id":"63783e5738f348a184ded710d68b1261","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hey {0}! Welcome to the Loaner Vehicle Topics.\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"},"id":"b54e5a0d11e840ad8d0097f8e8ba7eb7","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"0fb64d854ca44912b9b38e9b9625c097","name":"End","expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"Large image with text","cardFields":[{"name":"title","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Loaner Vehicle Request Issues\", vaContext.getRequesterLang())"},"required":true},{"name":"description","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Welcome to Loaner Vehicle Issues topic, solve your issue with the help of our Loaner Vehicle Issues BOT.\", vaContext.getRequesterLang())"},"required":false},{"name":"image","value":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"truck_12579537_1727919083565.png\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","mode":"string","value":""},"required":false}],"id":"50b3ba9e04f24180a28a2a222de7b512","name":"LVA Issues","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"0b508578267746099cbed469eae9fe5c","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"How may I help you in Loaner Vehicle?\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""}],"edges":[{"type":"Edge","source_node_id":"b54e5a0d11e840ad8d0097f8e8ba7eb7","target_node_id":"50b3ba9e04f24180a28a2a222de7b512","id":"a4c18fa2aa0b45ee9ac40c6fa6610d56"},{"type":"Edge","source_node_id":"50b3ba9e04f24180a28a2a222de7b512","target_node_id":"0fb64d854ca44912b9b38e9b9625c097","id":"9442ede69d924187b40eb6aa189c0255"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Show me available vehicles","element":"Show me available vehicles"},{"name":"Can't submit a Loaner Vehicle Request","element":"Can't submit a Loaner Vehicle Request"},{"name":"FAQs for Loaner Vehicle Request","element":"FAQs for Loaner Vehicle Request"},{"name":"Request a Loaner Vehicle","element":"Request a Loaner Vehicle"},{"name":"Other","element":"Other"}],"id":"0b508578267746099cbed469eae9fe5c","name":"lva_issues","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"LVA Issues"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"ded9564883bc1210559e6f60ceaad348","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"5513dc8d83c95ed0559e6f60ceaad3d9","name":"_PRVW__ea6c8145d041ded029bc73dbc6381935","key_phrases":["Loaner Request Issues","I need a loaner vehicle","Request a vehicle","Loaner car","Check vehicle availability","Is a vehicle available?","View vehicle inventory","Show me available vehicles","Loaner","Request","Issues"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"}],"triggerable_by_notification":false,"description":"Chatbot for Loaner Request Issues","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Loaner Request Issues","library":false,"csTopicId":"e9e714c983419ed0559e6f60ceaad3a4","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>5513dc8d83c95ed0559e6f60ceaad3d9</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b54e5a0d11e840ad8d0097f8e8ba7eb7": {
+          "id": "b54e5a0d11e840ad8d0097f8e8ba7eb7",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hey "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "! Welcome to the Loaner Vehicle Topics."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "0fb64d854ca44912b9b38e9b9625c097": {
+          "id": "0fb64d854ca44912b9b38e9b9625c097",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "50b3ba9e04f24180a28a2a222de7b512": {
+          "name": "LVA Issues",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How may I help you in Loaner Vehicle?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "0b508578267746099cbed469eae9fe5c",
+          "detailDescription": "",
+          "id": "50b3ba9e04f24180a28a2a222de7b512",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": true,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "Large image with text",
+            "cardFields": {
+              "1c617fa17313101081e06502edf6a780_title": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Loaner Vehicle Request Issues"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_description": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Welcome to Loaner Vehicle Issues topic, solve your issue with the help of our Loaner Vehicle Issues BOT."
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_image": {
+                "value": "truck_12579537_1727919083565.png",
+                "mode": "db_image"
+              }
+            },
+            "cardDefinition": {
+              "sys_id": "1c617fa17313101081e06502edf6a780",
+              "name": "Large image with text",
+              "sys_name": "Large image with text",
+              "thumbnail.name": "Large image with text.svg",
+              "fields": [
+                {
+                  "label": "Title",
+                  "position": "1",
+                  "mandatory": true,
+                  "name": "title",
+                  "id": "1c617fa17313101081e06502edf6a780_title"
+                },
+                {
+                  "label": "Description",
+                  "position": "2",
+                  "mandatory": false,
+                  "name": "description",
+                  "id": "1c617fa17313101081e06502edf6a780_description"
+                },
+                {
+                  "label": "Image URL link",
+                  "position": "3",
+                  "mandatory": true,
+                  "type": "image",
+                  "name": "image",
+                  "id": "1c617fa17313101081e06502edf6a780_image"
+                },
+                {
+                  "label": "Image alt text",
+                  "position": "4",
+                  "mandatory": false,
+                  "name": "imageAlt",
+                  "id": "1c617fa17313101081e06502edf6a780_imageAlt"
+                }
+              ],
+              "value": "Large image with text",
+              "hasTemplateError": false
+            }
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "a4c18fa2aa0b45ee9ac40c6fa6610d56",
+          "edgeType": "Edge",
+          "source": "b54e5a0d11e840ad8d0097f8e8ba7eb7",
+          "target": "50b3ba9e04f24180a28a2a222de7b512",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9442ede69d924187b40eb6aa189c0255",
+          "edgeType": "Edge",
+          "source": "50b3ba9e04f24180a28a2a222de7b512",
+          "target": "0fb64d854ca44912b9b38e9b9625c097",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "0b508578267746099cbed469eae9fe5c": {
+      "id": "0b508578267746099cbed469eae9fe5c",
+      "name": "lva_issues",
+      "label": "LVA Issues",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Show me available vehicles",
+          "value": "Show me available vehicles"
+        },
+        {
+          "label": "Can't submit a Loaner Vehicle Request",
+          "value": "Can't submit a Loaner Vehicle Request"
+        },
+        {
+          "label": "FAQs for Loaner Vehicle Request",
+          "value": "FAQs for Loaner Vehicle Request",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Request a Loaner Vehicle",
+          "value": "Request a Loaner Vehicle",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "50b3ba9e04f24180a28a2a222de7b512",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__ea6c8145d041ded029bc73dbc6381935</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-03 01:49:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ee6c81458341ded0559e6f60ceaad33d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cb_design_topic_ee6c81458341ded0559e6f60ceaad33d</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-03 01:49:25</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

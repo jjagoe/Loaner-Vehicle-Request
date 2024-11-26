@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>LVA Page Title - Test Page - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="lva_page">d4fd9e5283b81210559e6f60ceaad3a5</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-27 22:25:43</sys_created_on>
+        <sys_id>c2ddaad3837cd650559e6f60ceaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LVA Page Title - Test Page - Container 1</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sp_container_c2ddaad3837cd650559e6f60ceaad3cb</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-27 22:25:43</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</application>
+        <file_path/>
+        <instance_id>21fbfa1bebaf0e145a2dfceacad0cd9d</instance_id>
+        <instance_name>dev280871</instance_name>
+        <name>sp_container_c2ddaad3837cd650559e6f60ceaad3cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>LVA Page Title - Test Page - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="lva_page">d4fd9e5283b81210559e6f60ceaad3a5</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2024-09-27 22:25:43</sys_created_on><sys_id>c2ddaad3837cd650559e6f60ceaad3cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>LVA Page Title - Test Page - Container 1</sys_name><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope><sys_update_name>sp_container_c2ddaad3837cd650559e6f60ceaad3cb</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2024-09-27 22:25:43</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1188848196</payload_hash>
+        <record_name>LVA Page Title - Test Page - Container 1</record_name>
+        <reverted_from/>
+        <source>ba9b924483fc1210559e6f60ceaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-27 22:25:43</sys_created_on>
+        <sys_id>82ddaad3837cd650559e6f60ceaad3ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192359709df0000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-27 22:25:43</sys_updated_on>
+        <type>Container</type>
+        <update_guid>86ddaad3477cd6506a5d03d67e554fcd</update_guid>
+        <update_guid_history>86ddaad3477cd6506a5d03d67e554fcd:-1188848196</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="LVA Page Title - Test Page - Container 1">adedaad3837cd650559e6f60ceaad3dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-27 22:25:57</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>3cf1a7349cd34929914ac76bf184c071</sys_id>
+        <sys_metadata>c2ddaad3837cd650559e6f60ceaad3cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LVA Page Title - Test Page - Container 1</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_scope_delete display_value="">349b4ff3137b46b0a10a4badc27d0240</sys_scope_delete>
+        <sys_update_name>sp_container_c2ddaad3837cd650559e6f60ceaad3cb</sys_update_name>
+        <sys_update_version display_value="sp_container_c2ddaad3837cd650559e6f60ceaad3cb">82ddaad3837cd650559e6f60ceaad3ce</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-27 22:25:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

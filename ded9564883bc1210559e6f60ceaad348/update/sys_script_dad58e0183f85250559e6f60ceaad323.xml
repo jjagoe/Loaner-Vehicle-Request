@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1394714_lva1_vehicle_tracker</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Vehicle Status on Tracker</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+// Assuming 'current' is a GlideRecord object representing the current record in the vehicle tracker table
+
+// Create a variable for the current vehicle status field
+var currentVehicleStatus = current.vehicle_status; // Replace 'vehicle_status' with the actual field name
+
+// Create a variable for a new GlideRecord on the loaner vehicle catalog table
+var loanerVehicleGR = new GlideRecord('x_1394714_lva1_loaner_vehicle_catalog'); // Replace 'x_loaner_vehicle_catalog' with the actual table name
+
+// Query that table for the sys_id or the current vehicle field
+loanerVehicleGR.addQuery('sys_id', current.vehicle); // Assuming 'vehicle' is a reference field to the loaner vehicle catalog
+loanerVehicleGR.query();
+
+// Execute the query
+if (loanerVehicleGR.next()) {
+    // Iterate through the vehicle tracker table and apply the status logic
+    
+    // If the vehicle status on the tracker table is pending release, out on field,
+    // returned for inspection, or sent for servicing, then set the status field on the loaner vehicle 
+	// catalog table to unavailable
+    if (currentVehicleStatus == 'Pending Release' || 
+        currentVehicleStatus == 'Out on Field' || 
+        currentVehicleStatus == 'Returned for Inspection' || 
+        currentVehicleStatus == 'Sent for Servicing') {
+        
+        loanerVehicleGR.setValue('status', 'Unavailable'); // Set status to 'unavailable'
+
+    } else if (currentVehicleStatus == 'Returned to Warehouse') {
+        // If the vehicle status on the tracker table is returned to warehouse then set the status field  
+		// on the loaner vehicle catalog table to available
+        loanerVehicleGR.setValue('status', 'Available'); // Set status to 'available'
+
+    } else if (currentVehicleStatus == 'Decommissioned') {
+        // If the vehicle status on the tracker table is decommissioned then set the status field on the 
+		// loaner vehicle catalog table to decommissioned
+        loanerVehicleGR.setValue('status', 'Decommissioned'); // Set status to 'decommissioned'
+    }
+
+    // Step 6: Update the status field on the loaner vehicle catalog table
+    loanerVehicleGR.update();
+}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-09-20 20:12:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dad58e0183f85250559e6f60ceaad323</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Set Vehicle Status on Tracker</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_script_dad58e0183f85250559e6f60ceaad323</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-09-22 04:21:33</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=dad58e0183f85250559e6f60ceaad323"/>
+</record_update>

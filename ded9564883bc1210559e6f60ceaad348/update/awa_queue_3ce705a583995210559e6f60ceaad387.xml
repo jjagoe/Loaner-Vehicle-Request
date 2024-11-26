@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="awa_queue">
+    <awa_queue action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <average_wait_time>1970-01-01 00:00:30</average_wait_time>
+        <condition/>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {  
+	// customize condition logic here, return true or false  
+	return false;
+})(current);]]></condition_script>
+        <evaluation_scope>document</evaluation_scope>
+        <external>false</external>
+        <external_id/>
+        <initial_agent_response>Thank you for contacting support. I am looking into your question now and will be with you shortly.</initial_agent_response>
+        <max_wait_time>1970-01-01 00:00:05</max_wait_time>
+        <max_wait_time_message>No agents are available to chat right now. Check back later.</max_wait_time_message>
+        <name>Chat</name>
+        <number>QUE00002</number>
+        <order>100</order>
+        <schedule/>
+        <service_channel display_value="Chat">27f675e3739713004a905ee515f6a7c3</service_channel>
+        <short_description>Live Agent Chat Interactions</short_description>
+        <subflow/>
+        <sys_class_name>awa_queue</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-17 01:04:50</sys_created_on>
+        <sys_id>3ce705a583995210559e6f60ceaad387</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Chat</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>awa_queue_3ce705a583995210559e6f60ceaad387</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-17 02:06:19</sys_updated_on>
+        <target_wait_time>1970-01-01 00:00:05</target_wait_time>
+        <use_condition>true</use_condition>
+    </awa_queue>
+</record_update>

@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>true</autopilot_topic>
+        <category>0a9d30bdebc31110add0ddde23522847</category>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Chatbot for Loaner Request Issues</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b54e5a0d11e840ad8d0097f8e8ba7eb7": {
+          "id": "b54e5a0d11e840ad8d0097f8e8ba7eb7",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hey "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "! Welcome to the Loaner Vehicle Topics."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "0fb64d854ca44912b9b38e9b9625c097": {
+          "id": "0fb64d854ca44912b9b38e9b9625c097",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "50b3ba9e04f24180a28a2a222de7b512": {
+          "name": "LVA Issues",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How may I help you in Loaner Vehicle?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "0b508578267746099cbed469eae9fe5c",
+          "detailDescription": "",
+          "id": "50b3ba9e04f24180a28a2a222de7b512",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": true,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "Large image with text",
+            "cardFields": {
+              "1c617fa17313101081e06502edf6a780_title": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Loaner Vehicle Request Issues"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_description": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Welcome to Loaner Vehicle Issues topic, solve your issue with the help of our Loaner Vehicle Issues BOT."
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_image": {
+                "value": "truck_12579537_1727919083565.png",
+                "mode": "db_image"
+              }
+            },
+            "cardDefinition": {
+              "sys_id": "1c617fa17313101081e06502edf6a780",
+              "name": "Large image with text",
+              "sys_name": "Large image with text",
+              "thumbnail.name": "Large image with text.svg",
+              "fields": [
+                {
+                  "label": "Title",
+                  "position": "1",
+                  "mandatory": true,
+                  "name": "title",
+                  "id": "1c617fa17313101081e06502edf6a780_title"
+                },
+                {
+                  "label": "Description",
+                  "position": "2",
+                  "mandatory": false,
+                  "name": "description",
+                  "id": "1c617fa17313101081e06502edf6a780_description"
+                },
+                {
+                  "label": "Image URL link",
+                  "position": "3",
+                  "mandatory": true,
+                  "type": "image",
+                  "name": "image",
+                  "id": "1c617fa17313101081e06502edf6a780_image"
+                },
+                {
+                  "label": "Image alt text",
+                  "position": "4",
+                  "mandatory": false,
+                  "name": "imageAlt",
+                  "id": "1c617fa17313101081e06502edf6a780_imageAlt"
+                }
+              ],
+              "value": "Large image with text",
+              "hasTemplateError": false
+            }
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "7e3b2fb53a574c4e81e7e12c3fefde1e": {
+          "id": "7e3b2fb53a574c4e81e7e12c3fefde1e",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "2e480ea59764491da9bf555dd83e692b": {
+          "id": "2e480ea59764491da9bf555dd83e692b",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Base",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev280871.service-now.com/lva/en/this-guide-provides-step-by-step-instructions-for-submitting-a-loaner?id=kb_article_view&amp;sysparm_article=KB0010002"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please click on the below link to get the step by step instructions to Request a Vehicle."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Can't submit a Loaner Vehicle Request"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "2014a4a44b6247eba7be265de8d2b1a1": {
+          "id": "2014a4a44b6247eba7be265de8d2b1a1",
+          "stepType": "BooleanPrompt",
+          "name": "Issue Solved?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Does this solve your issue?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "2682547a6667485eaaec36393fe77be8",
+          "detailDescription": ""
+        },
+        "591471a6b8cf4593a8d2aa036368c2bb": {
+          "id": "591471a6b8cf4593a8d2aa036368c2bb",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "a9528a22c417488ba95a337caa7348c2": {
+          "id": "a9528a22c417488ba95a337caa7348c2",
+          "stepType": "TextOutput",
+          "name": "Great",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Great that it solved your issue. "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "+1",
+                        "name": "Thumbs Up Sign",
+                        "short_names": [
+                          "+1",
+                          "thumbsup"
+                        ],
+                        "colons": ":+1:",
+                        "emoticons": [],
+                        "unified": "1f44d",
+                        "skin": 1,
+                        "native": "👍"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "d3d784ea9f9d43218a2efe7ff57f1d67"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "40d8f1c1efbb4fdfb3558a51e8590248": {
+          "name": "Help",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Help"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "4b127bb3de6c41cd9309b66c8dd662b3",
+          "detailDescription": "",
+          "id": "40d8f1c1efbb4fdfb3558a51e8590248",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "d9876d27e4e843cba4ee2e091e8c926a": {
+          "id": "d9876d27e4e843cba4ee2e091e8c926a",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Base",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev280871.service-now.com/lva/en/faqs-for-the-loaner-vehicle-request-application?id=kb_article_view&amp;sysparm_article=KB0010004"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please click on the below link to get the FAQs for Loaner Vehicle Request."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "FAQs for Loaner Vehicle Request"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "aaae0fab2fff478fb7f3b52a784972a3": {
+          "id": "aaae0fab2fff478fb7f3b52a784972a3",
+          "stepType": "LinkOutput",
+          "name": "Vehicle Inventory",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev280871.service-now.com/now/nav/ui/classic/params/target/x_1394714_lva1_loaner_vehicle_catalog_list.do%3Fsysparm_query%3Dstatus%253DAvailable%26sysparm_first_row%3D1%26sysparm_view%3D"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please click on the below link to get a list of available vehicles."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Show me available vehicles"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "4c9eec630e9f460c9fc61f73dbb8c6b8": {
+          "id": "4c9eec630e9f460c9fc61f73dbb8c6b8",
+          "stepType": "LinkOutput",
+          "name": "Request Loaner Vehicle",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev280871.service-now.com/now/nav/ui/classic/params/target/com.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D5690209483f49210559e6f60ceaad3d3"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please click on the below link to request a new Loaner Vehicle."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Request Loaner Vehicle"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "8f21df95c95a4757b9554cb5f3d43d2f": {
+          "id": "8f21df95c95a4757b9554cb5f3d43d2f",
+          "stepType": "ImplicitEnd"
+        },
+        "9c2f19c3074e4b32b77afe400aa499a2": {
+          "id": "9c2f19c3074e4b32b77afe400aa499a2",
+          "stepType": "BooleanPrompt",
+          "name": "Did this Help",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Is there anything else I can help you with?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "d7571614b0ec45eb97200d3cbebc07fc",
+          "detailDescription": ""
+        },
+        "9439a855953d4a18845f54a84ea13d45": {
+          "id": "9439a855953d4a18845f54a84ea13d45",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "3d9c20c8ef3249a58b5b5d29516563f9": {
+          "id": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "stepType": "TextOutput",
+          "name": "No More Help",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "I'm glad to hear that! Have a nice day"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "dd120cb6f4a14da6b9fa8bfce0ab54df"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "52732d13dbc04e6184ebcfaa98c9a7cb": {
+          "id": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "stepType": "TextOutput",
+          "name": "Standby",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Connecting you to a Live Agent"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "57fc1c791da14b129fad48451b4f5551"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "23b42fc11d094d0d8a4345a8b3aba29b",
+          "edgeType": "Branch",
+          "source": "9439a855953d4a18845f54a84ea13d45",
+          "target": "8f21df95c95a4757b9554cb5f3d43d2f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_this_help=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "a4c18fa2aa0b45ee9ac40c6fa6610d56",
+          "edgeType": "Edge",
+          "source": "b54e5a0d11e840ad8d0097f8e8ba7eb7",
+          "target": "50b3ba9e04f24180a28a2a222de7b512",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9442ede69d924187b40eb6aa189c0255",
+          "edgeType": "Edge",
+          "source": "50b3ba9e04f24180a28a2a222de7b512",
+          "target": "7e3b2fb53a574c4e81e7e12c3fefde1e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d2eabd5f074c4ead8370709eff4a868d",
+          "edgeType": "Branch",
+          "source": "7e3b2fb53a574c4e81e7e12c3fefde1e",
+          "target": "2e480ea59764491da9bf555dd83e692b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.lva_issues=Can't submit a Loaner Vehicle Request",
+            "mode": "query"
+          },
+          "label": "Can't submit a Loaner Vehicle Request"
+        },
+        {
+          "id": "ebcd534d0b834ec6a7d8298ed8ba8588",
+          "edgeType": "Edge",
+          "source": "2e480ea59764491da9bf555dd83e692b",
+          "target": "2014a4a44b6247eba7be265de8d2b1a1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e5aaa4890669474e81a98345f2ef665c",
+          "edgeType": "Edge",
+          "source": "2014a4a44b6247eba7be265de8d2b1a1",
+          "target": "591471a6b8cf4593a8d2aa036368c2bb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e1fc1450de31412bb711b7814f790079",
+          "edgeType": "Branch",
+          "source": "591471a6b8cf4593a8d2aa036368c2bb",
+          "target": "a9528a22c417488ba95a337caa7348c2",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.issue_solved_=true",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "b60c88f956764ab68ec798cf428cf64d",
+          "edgeType": "Edge",
+          "source": "a9528a22c417488ba95a337caa7348c2",
+          "target": "0fb64d854ca44912b9b38e9b9625c097",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "5f8b3ffaa36a43358043a4e8fde3cfe2",
+          "edgeType": "Branch",
+          "source": "591471a6b8cf4593a8d2aa036368c2bb",
+          "target": "40d8f1c1efbb4fdfb3558a51e8590248",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.issue_solved_=false",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "c27612cad04d45f5871a00ee755f52cb",
+          "edgeType": "Branch",
+          "source": "7e3b2fb53a574c4e81e7e12c3fefde1e",
+          "target": "d9876d27e4e843cba4ee2e091e8c926a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.lva_issues=FAQs for Loaner Vehicle Request",
+            "mode": "query"
+          },
+          "label": "FAQs for Loaner Vehicle Request"
+        },
+        {
+          "id": "5a3df81e407f4574883c216ccc51faa3",
+          "edgeType": "Edge",
+          "source": "d9876d27e4e843cba4ee2e091e8c926a",
+          "target": "2014a4a44b6247eba7be265de8d2b1a1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1991007216a54b9e9b890ca9b7195b05",
+          "edgeType": "Branch",
+          "source": "7e3b2fb53a574c4e81e7e12c3fefde1e",
+          "target": "aaae0fab2fff478fb7f3b52a784972a3",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.lva_issues=Show me available vehicles",
+            "mode": "query"
+          },
+          "label": "Show me available vehicles"
+        },
+        {
+          "id": "4e1fd5b68a054ee8a99499066425856c",
+          "edgeType": "Edge",
+          "source": "aaae0fab2fff478fb7f3b52a784972a3",
+          "target": "2014a4a44b6247eba7be265de8d2b1a1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6b69caaca0f944388081cf6964130b68",
+          "edgeType": "Branch",
+          "source": "7e3b2fb53a574c4e81e7e12c3fefde1e",
+          "target": "4c9eec630e9f460c9fc61f73dbb8c6b8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.lva_issues=Request a Loaner Vehicle",
+            "mode": "query"
+          },
+          "label": "Request a Loaner Vehicle"
+        },
+        {
+          "id": "e0e401f975064d6ab8c150dbd8c2c92b",
+          "edgeType": "Edge",
+          "source": "4c9eec630e9f460c9fc61f73dbb8c6b8",
+          "target": "2014a4a44b6247eba7be265de8d2b1a1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3e0aec161b0543c3a1a722120e1ee041",
+          "edgeType": "Edge",
+          "source": "9c2f19c3074e4b32b77afe400aa499a2",
+          "target": "9439a855953d4a18845f54a84ea13d45",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9c3d127d6acc4da2bcebf510fb44ee62",
+          "edgeType": "Branch",
+          "source": "9439a855953d4a18845f54a84ea13d45",
+          "target": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_this_help=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "abf347d3cd554707bcca444e56e3c7ec",
+          "edgeType": "Edge",
+          "source": "3d9c20c8ef3249a58b5b5d29516563f9",
+          "target": "0fb64d854ca44912b9b38e9b9625c097",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e61246d96c434f7fb7d7d128a3bae7d3",
+          "edgeType": "Edge",
+          "source": "40d8f1c1efbb4fdfb3558a51e8590248",
+          "target": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ce86680f77d2485ba3ddece033e6df62",
+          "edgeType": "Edge",
+          "source": "52732d13dbc04e6184ebcfaa98c9a7cb",
+          "target": "9c2f19c3074e4b32b77afe400aa499a2",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "0b508578267746099cbed469eae9fe5c": {
+      "id": "0b508578267746099cbed469eae9fe5c",
+      "name": "lva_issues",
+      "label": "LVA Issues",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Show me available vehicles",
+          "value": "Show me available vehicles"
+        },
+        {
+          "label": "Can't submit a Loaner Vehicle Request",
+          "value": "Can't submit a Loaner Vehicle Request"
+        },
+        {
+          "label": "FAQs for Loaner Vehicle Request",
+          "value": "FAQs for Loaner Vehicle Request",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Request a Loaner Vehicle",
+          "value": "Request a Loaner Vehicle",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "50b3ba9e04f24180a28a2a222de7b512",
+      "isHidden": false
+    },
+    "2682547a6667485eaaec36393fe77be8": {
+      "id": "2682547a6667485eaaec36393fe77be8",
+      "name": "issue_solved_",
+      "label": "Issue Solved?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "2014a4a44b6247eba7be265de8d2b1a1",
+      "isHidden": false
+    },
+    "4b127bb3de6c41cd9309b66c8dd662b3": {
+      "id": "4b127bb3de6c41cd9309b66c8dd662b3",
+      "name": "help",
+      "label": "Help",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Live Agent Support",
+          "value": "Live Agent Support"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "40d8f1c1efbb4fdfb3558a51e8590248",
+      "isHidden": false
+    },
+    "d7571614b0ec45eb97200d3cbebc07fc": {
+      "id": "d7571614b0ec45eb97200d3cbebc07fc",
+      "name": "did_this_help",
+      "label": "Did This Help",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "9c2f19c3074e4b32b77afe400aa499a2",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>Loaner Request Issues,I need a loaner vehicle,Request a vehicle,Loaner car,Check vehicle availability,Is a vehicle available?,View vehicle inventory,Show me available vehicles,Loaner,Request,Issues</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Loaner Request Issues</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2024-10-02 21:38:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5513dc8d83c95ed0559e6f60ceaad3d9</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>Loaner Request Issues</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394714_lva1">ded9564883bc1210559e6f60ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">ded9564883bc1210559e6f60ceaad348</sys_scope>
+        <sys_update_name>sys_cb_topic_5513dc8d83c95ed0559e6f60ceaad3d9</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2024-10-17 02:20:21</sys_updated_on>
+        <title>Loaner Request Issues</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=5513dc8d83c95ed0559e6f60ceaad3d9"/>
+</record_update>
